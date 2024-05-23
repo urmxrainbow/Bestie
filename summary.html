@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Summary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="showSummary()">
+    <div class="container">
+        <h1>Quiz Summary</h1>
+        <p id="summary"></p>
+        <p id="congratulations" style="color: green; font-weight: bold;"></p>
+        <div class="button-container">
+            <button id="shareButton" style="display: none;" onclick="shareScore()">Share</button>
+            <button onclick="location.href='index.html'">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

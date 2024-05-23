@@ -1,0 +1,74 @@
+/*
+@font-face {
+    font-family: "Bohemian Soul";
+    src: url("Cupid Love.");
+}   */
+@font-face {
+    font-family: 'Cupid Love';
+    src: url('fonts/cute_love-webfont.woff2') format('woff2'),
+         url('fonts/cute_love-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("cute4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0; 
+    font-size: 23px;
+    color: rgb(141, 79, 79);
+    
+}
+
+body, .container, button {
+    font-family: 'Cupid Love', Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    
+    
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    margin: 0 10px;
+}
+
+
+button {
+    background-color: #a6d4fa;
+    color: white;
+    padding: 0; 
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+#summary {
+    font-size: 30px;
+    
+}
