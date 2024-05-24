@@ -1,9 +1,9 @@
 
-let userAnswers = JSON.parse(localStorage.getItem('userAnswers')) || [];
+let CutegirlAnswers = JSON.parse(localStorage.getItem('CutegirlAnswers')) || [];
 
 function handleAnswer(questionNumber, isCorrect, nextPage) {
-    userAnswers[questionNumber - 1] = isCorrect;
-    localStorage.setItem('userAnswers', JSON.stringify(userAnswers));
+    CutegirlAnswers[questionNumber - 1] = isCorrect;
+    localStorage.setItem('CutegirlAnswers', JSON.stringify(CutegirlAnswers));
     history.replaceState(null, '', nextPage);
     location.href = nextPage;
 }
@@ -16,14 +16,14 @@ function initializePage() {
 }
 
 function startQuiz() {
-    userAnswers = [];
-    localStorage.setItem('userAnswers', JSON.stringify(userAnswers));
+    CutegirlAnswers = [];
+    localStorage.setItem('CutegirlAnswers', JSON.stringify(CutegirlAnswers));
     location.href = 'question1.html';
 }
 
 function showSummary() {
-    const userAnswers = JSON.parse(localStorage.getItem('userAnswers')) || [];
-    const correctCount = userAnswers.filter(answer => answer).length;
+    const CutegirlAnswers = JSON.parse(localStorage.getItem('CutegirlAnswers')) || [];
+    const correctCount = CutegirlAnswers.filter(answer => answer).length;
     const summaryElement = document.getElementById('summary');
     const congratulationsElement = document.getElementById('congratulations');
     const shareButton = document.getElementById('shareButton');
@@ -37,14 +37,14 @@ function showSummary() {
 }
 
 function shareScore() {
-    const userAnswers = JSON.parse(localStorage.getItem('userAnswers')) || [];
-    const correctCount = userAnswers.filter(answer => answer).length;
+    const CutegirlAnswers = JSON.parse(localStorage.getItem('CutegirlAnswers')) || [];
+    const correctCount = CutegirlAnswers.filter(answer => answer).length;
     const shareText = `I scored ${correctCount} out of 5 on this quiz!`;
     if (navigator.share) {
         navigator.share({
             title: 'Quiz Score',
             text: shareText,
-            url: window.location.href
+            url: 'https://urmxrainbow.github.io/Bestie/',
         });
     } else {
         alert('Sharing not supported in this browser.');
