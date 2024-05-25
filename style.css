@@ -14,6 +14,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Marykate Regular';
+    src: url('font5/Marykate\ Regular.woff2') format('woff2'),
+         url('font5/Marykate\ Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -38,7 +46,7 @@ body {
     
 }
 
-body, .container, button {
+ .container, button {
     font-family: 'Cupid Love', Arial, sans-serif;
 }
 
@@ -83,6 +91,7 @@ body, .container, button {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    transform: translateY(-130%);
 }
 
 .button-container button {
@@ -105,13 +114,18 @@ button {
     height: 55px;
     line-height: 50px;
 
+
 }
 
 h1 {
     font-size: 80px;
     text-align: center;
     margin: 0;
+    color: #ffffff; /* Set a single color */
+    font-family: 'Cupid Love', Arial, sans-serif; /* Choose one font-family */
+    -webkit-text-stroke: px black; 
 }
+
 
 /*h1 a {
     text-decoration: none;
@@ -132,22 +146,40 @@ h1 b {
 
 .main-heading {
     color: #ED499C;
-    font-size: 80px;
+    font-size: 86px;
     font-family: 'edwardianscriptitc', Arial, sans-serif; 
+    transform: translateX(-187px);
+    position: absolute;
+}
+.inline {
+    color: #ED499C;
+    font-size: 86px;
+    font-family: 'edwardianscriptitc', Arial, sans-serif; 
+    transform: translateX(60px);
+    position: absolute;
+
 }
 
 .cute-girl {
-    font-size: 30px;
-    font-family: Arial, sans-serif; 
-    color: inherit;
-    -webkit-text-stroke: 0.8px black;
-    margin-bottom: 10px;
+    font-size: 42px;
+    font-family: 'Marykate Regular', Arial, sans-serif; 
+    color: #9EADED; /* กำหนดค่าสีของข้อความ */
+    -webkit-text-stroke: 0.8px black; /* เพิ่มเส้นขอบสีดำ */
+    transform: translateY(100px) translateX(-140px);
+    position: absolute;
+    white-space: nowrap;
+}
+
+
+.Questiosn {
+    font-size: 35px;
 }
 
 
 .startbutton {
     top: 200%;
     bottom: 100%;
+    transform: translateY(190px);
 } 
 
 .footer {
@@ -173,13 +205,28 @@ h1 b {
     text-decoration: underline;
 }
 
+.QuizSummary {
+    font-size: 60px;
+    color: #9EADED;
+    transform: translateY(-20%);
+}
+
 
 #summary {
-    font-size: 30px;
+    font-size: 35px;
+    color: #F197CE;
+    transform: translateY(-140%);
     
+}
+
+#congratulations {
+    font-size: 35px;
+    transform: translateY(-150%);
 }
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 60px; 
     }
 }
+
+

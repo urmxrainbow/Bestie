@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Summary</title>
+    <style>
+        body {
+            background-image: url('aoxwizz/14.jpg');
+        }
+    </style>
+
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="showSummary()">
     <div class="container">
-        <h1>Quiz Summary</h1>
+        <p class="QuizSummary"> Quiz Summary</p>
         <p id="summary"></p>
-        <p id="congratulations" style="color: green; font-weight: bold;"></p>
+        <p id="congratulations" style="color: rgb(237, 222, 115); font-weight: bold;"></p>
         <div class="button-container">
             <button id="shareButton" style="display: none;" onclick="shareScore()">Share</button>
             <button onclick="location.href='index.html'">Restart Quiz</button>
