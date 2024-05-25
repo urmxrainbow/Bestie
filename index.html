@@ -5,11 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Start</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; 
+        }
+
+        .content {
+            position: absolute;
+            top: 200px; /* Adjust this value to create more space */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+}
+
+
+        .image-container {
+            position: absolute;
+            bottom: 0;
+            top: 53%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .image {
+            width: 280px;
+            height: auto;
+        }
+        .content {
+            position: absolute;
+            top: 110px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 270px;
+
+            
+        }
+
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Nancy Quiz!</h1>
-        <button onclick="location.href='question1.html'">Start Quiz</button>
+        <div class="content">
+            <div class="heading">
+                <span class="main-heading">Welcome to</span> 
+                <span class="cute-girl">Nancy Bestie Quiz</span>
+            </div>
+            <div class="startbutton">
+                <button onclick="location.href='question1.html'">Start Quiz</button>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="image" src="aoxwizz.png">
+            <div class="footer">
+                Made by <a href="https://www.instagram.com/aoxwizz?igsh=ZG1lOGM5M3d4OWY1&utm_source=qr">@aoxwizz</a>.<br>
+                Thank you for visiting my website.
+            </div>
+        </div>
     </div>
 </body>
+
 </html>

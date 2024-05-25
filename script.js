@@ -30,16 +30,25 @@ function showSummary() {
     
     summaryElement.innerText = `You got ${correctCount} out of 5 !`;
     
-    if (correctCount === 5) {
-        congratulationsElement.innerText = 'You know me so well Bestie \uD83D\uDC8B';
-        shareButton.style.display = 'block';
+    if(correctCount === 5){
+    congratulationsElement.innerText = 'You know me so well Bestie \uD83D\uDC8B';
+    shareButton.style.display = 'block';}
+
+    else if (correctCount <= 1){
+        congratulationsElement.innerText = '🥺 its okay you can retest';
+    shareButton.style.display = 'block';
+    }
+    else {
+        congratulationsElement.innerText = `Wow ${correctCount}? not bad 🥰 `;
+    shareButton.style.display = 'block';
     }
 }
+
 
 function shareScore() {
     const CutegirlAnswers = JSON.parse(localStorage.getItem('CutegirlAnswers')) || [];
     const correctCount = CutegirlAnswers.filter(answer => answer).length;
-    const shareText = `I scored ${correctCount} out of 5 on this quiz!`;
+    const shareText = `I scored ${correctCount} out of 5 on Nancy bestie quiz!! here the link 👇🏻👇🏻`;
     if (navigator.share) {
         navigator.share({
             title: 'Quiz Score',

@@ -1,12 +1,15 @@
-/*
-@font-face {
-    font-family: "Bohemian Soul";
-    src: url("Cupid Love.");
-}   */
 @font-face {
     font-family: 'Cupid Love';
     src: url('fonts/cute_love-webfont.woff2') format('woff2'),
          url('fonts/cute_love-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'edwardianscriptitc';
+    src: url('font3/edwardianscriptitc.woff2') format('woff2'),
+         url('font3/edwardianscriptitc.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -18,20 +21,56 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url("cute4.jpg");
+    /*background-image: url("cute4.jpg");*/
+    background-color: #FCF4DF;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0;
     padding: 0; 
     font-size: 23px;
-    color: rgb(141, 79, 79);
+    color: #FCF4DF;
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden;
+    -webkit-text-stroke: 0.8px black;
+
     
 }
 
 body, .container, button {
     font-family: 'Cupid Love', Arial, sans-serif;
 }
+
+.container1 {
+    text-align: center;
+    padding: 20px;
+    
+    
+}
+
+.footer{
+    white-space: nowrap;
+    font-size: 20px;
+    color: rgb(141, 76, 76);
+    -webkit-text-stroke: 0px black;
+    
+}
+.footer a {
+    color: rgb(141, 76, 76);
+    -webkit-text-stroke: 0px black;
+
+    
+}
+
+.image-container {
+    position: absolute;
+    bottom: 0;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 .container {
     text-align: center;
@@ -52,23 +91,95 @@ body, .container, button {
 
 
 button {
-    background-color: #a6d4fa;
+    background-color: #7fbaf1;
     color: white;
     padding: 0; 
+    border: 0.8px solid #000000;
     text-align: center;
     display: inline-block;
     font-size: 30px;
     margin: 4px 2px;
     cursor: pointer;
-    border: none;
     border-radius: 25px;
-    width: 150px;
-    height: 50px;
+    width: 170px;
+    height: 55px;
     line-height: 50px;
 
 }
 
+h1 {
+    font-size: 80px;
+    text-align: center;
+    margin: 0;
+}
+
+/*h1 a {
+    text-decoration: none;
+    color: #ED499C;
+    font-family: 'edwardianscriptitc', Arial, sans-serif; 
+     -webkit-text-stroke: 0px black;
+}
+
+
+h1 b {
+    font-weight: normal; /* Ensures the b element doesn't inherit boldness 
+    color: rgb(141, 76, 76);
+} */
+
+.heading {
+    text-align: center;
+}
+
+.main-heading {
+    color: #ED499C;
+    font-size: 80px;
+    font-family: 'edwardianscriptitc', Arial, sans-serif; 
+}
+
+.cute-girl {
+    font-size: 30px;
+    font-family: Arial, sans-serif; 
+    color: inherit;
+    -webkit-text-stroke: 0.8px black;
+    margin-bottom: 10px;
+}
+
+
+.startbutton {
+    top: 200%;
+    bottom: 100%;
+} 
+
+.footer {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: rgb(141, 76, 76);
+    text-align: center;
+    font-family: 'Cupid Love';
+    font-size: 20px;
+}
+
+.footer a {
+    color: rgb(141, 76, 76);
+    text-decoration: none;
+    -webkit-text-stroke: 0px black;
+    font-family: 'Cupid Love';
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
 #summary {
     font-size: 30px;
     
+}
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 60px; 
+    }
 }
