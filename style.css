@@ -641,11 +641,11 @@ h1 b {
     }
     
     .cute-girl {
-        font-size: 35px;
+        font-size: 40px;
         font-family: 'Marykate Regular', Arial, sans-serif; 
         color: #9EADED; /* กำหนดค่าสีของข้อความ */
         -webkit-text-stroke: 0.8px black; /* เพิ่มเส้นขอบสีดำ */
-        transform: translateY(90px) translateX(-120px);
+        transform: translateY(90px) translateX(-140px);
         position: absolute;
         white-space: nowrap;
     }
