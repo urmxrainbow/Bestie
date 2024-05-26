@@ -659,7 +659,7 @@ h1 b {
     .startbutton {
         top: 200%;
         bottom: 100%;
-        transform: translateY(160px);
+        transform: translateY(180px);
     } 
     
     .footer {
