@@ -221,7 +221,7 @@ h1 b {
 
 #congratulations {
     font-size: 35px;
-    transform: translateY(-150%);
+    transform: translateY(-180%);
 }
 @media screen and (max-width: 600px) {
     h1 {
@@ -397,10 +397,158 @@ h1 b {
     .container {
         grid-template-columns: 1fr 1fr;
     }
+    .image-container img {
+        position: absolute;
+        bottom: 0;
+        top: 45%;
+        left: 50%;
+        transform: translateY(-180px) translateX(-50%);
+        width: 290px;
+        height: auto;
+    }
+    
+    
+    .container {
+        text-align: center;
+        padding: 20px;
+        
+        
+    }
+
+    /*.booog {
+        width: 100px;
+        height: ;
+    } */
+    
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        transform: translateY(-80%);
+
+    }
+    
+    .button-container button {
+        margin: 10px;
+        width: 150px;
+        height: auto;
+        font-size: 24px;
+        width: 130px;
+        height: 50px;
+    }
+    
+    .button-booog {
+        width: 130px;
+        height: 50px;
+        font-size: 25px;
+    }
+    
+    button {
+        background-color: #7fbaf1;
+        color: white;
+        padding: 0; 
+        border: 0.8px solid #000000;
+        text-align: center;
+        display: inline-block;
+        font-size: 30px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 25px;
+        width: 170px;
+        height: 50px;
+        line-height: 50px;
+    
+    
+    }
+
+    .heading {
+        text-align: center;
+    }
+    
+    .main-heading {
+        color: #ED499C;
+        font-size: 80px;
+        font-family: 'edwardianscriptitc', Arial, sans-serif; 
+        transform: translateY(-60px) translateX(-170px);
+        position: absolute;
+    }
+    .inline {
+        color: #ED499C;
+        font-size: 80px;
+        font-family: 'edwardianscriptitc', Arial, sans-serif; 
+        transform: translateY(-60px) translateX(60px);
+        position: absolute;
+    
+    }
+    
+    .cute-girl {
+        font-size: 35px;
+        font-family: 'Marykate Regular', Arial, sans-serif; 
+        color: #9EADED; /* กำหนดค่าสีของข้อความ */
+        -webkit-text-stroke: 0.8px black; /* เพิ่มเส้นขอบสีดำ */
+        transform: translateY(40px) translateX(-120px);
+        position: absolute;
+        white-space: nowrap;
+    }
+    
+    
+    .Questiosn {
+        font-size: 30px;
+    }
+    
+    
+    .startbutton {
+        top: 200%;
+        bottom: 100%;
+        transform: translateY(110px);
+    } 
+    
+    .footer {
+        position: absolute;
+        bottom: 20px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 16px;
+        color: rgb(141, 76, 76);
+        text-align: center;
+        font-family: 'Cupid Love';
+        font-size: 15px;
+    }
+    
+    .footer a {
+        color: rgb(141, 76, 76);
+        text-decoration: none;
+        -webkit-text-stroke: 0px black;
+        font-family: 'Cupid Love';
+
+    }
+    
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    
+    .QuizSummary {
+        font-size: 50px;
+        color: #9EADED;
+        transform: translateY(60%);
+    }
+    
+    
+    #summary {
+        font-size: 35px;
+        color: #F197CE;
+        transform: translateY(-10%);
+        
+    }
+    
+    #congratulations {
+        font-size: 25px;
+        transform: translateY(-90%);
+    }
 }
 
 /* Large phones */
-@media (min-width: 415px) and (max-width: 428px) {
+@media (min-width: 415px) and (max-width: 896px){
     body {
         font-size: 20px;
     }
@@ -408,18 +556,157 @@ h1 b {
     .container {
         grid-template-columns: 1fr 1fr;
     }
-}
-
-/* For screens larger than 428px */
-@media (min-width: 429px) {
-    body {
-        font-size: 22px;
+    .image-container img {
+        position: absolute;
+        bottom: 0;
+        top: 45%;
+        left: 50%;
+        transform: translateY(-170px) translateX(-50%);
+        width: 290px;
+        height: auto;
     }
-
+    
+    
     .container {
-        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        padding: 20px;
+        
+        
+    }
+
+    /*.booog {
+        width: 100px;
+        height: ;
+    } */
+    
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        transform: translateY(-80%);
+
+    }
+    
+    .button-container button {
+        margin: 10px;
+        width: 150px;
+        height: auto;
+        font-size: 24px;
+        width: 130px;
+        height: 50px;
+    }
+    
+    .button-booog {
+        width: 150px;
+        height: 50px;
+        font-size: 28px;
+    }
+    
+    button {
+        background-color: #7fbaf1;
+        color: white;
+        padding: 0; 
+        border: 0.8px solid #000000;
+        text-align: center;
+        display: inline-block;
+        font-size: 30px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 25px;
+        width: 170px;
+        height: 50px;
+        line-height: 50px;
+    
+    
+    }
+
+    .heading {
+        text-align: center;
+    }
+    
+    .main-heading {
+        color: #ED499C;
+        font-size: 90px;
+        font-family: 'edwardianscriptitc', Arial, sans-serif; 
+        transform: translateY(-20px) translateX(-190px);
+        position: absolute;
+    }
+    .inline {
+        color: #ED499C;
+        font-size: 90px;
+        font-family: 'edwardianscriptitc', Arial, sans-serif; 
+        transform: translateY(-20px) translateX(60px);
+        position: absolute;
+    
+    }
+    
+    .cute-girl {
+        font-size: 35px;
+        font-family: 'Marykate Regular', Arial, sans-serif; 
+        color: #9EADED; /* กำหนดค่าสีของข้อความ */
+        -webkit-text-stroke: 0.8px black; /* เพิ่มเส้นขอบสีดำ */
+        transform: translateY(90px) translateX(-120px);
+        position: absolute;
+        white-space: nowrap;
+    }
+    
+    
+    .Questiosn {
+        font-size: 37px;
+    }
+    
+    
+    .startbutton {
+        top: 200%;
+        bottom: 100%;
+        transform: translateY(160px);
+    } 
+    
+    .footer {
+        position: absolute;
+        bottom: 20px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 16px;
+        color: rgb(141, 76, 76);
+        text-align: center;
+        font-family: 'Cupid Love';
+        font-size: 20px;
+    }
+    
+    .footer a {
+        color: rgb(141, 76, 76);
+        text-decoration: none;
+        -webkit-text-stroke: 0px black;
+        font-family: 'Cupid Love';
+
+    }
+    
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    
+    .QuizSummary {
+        font-size: 60px;
+        color: #9EADED;
+        transform: translateY(20%);
+    }
+    
+    
+    #summary {
+        font-size: 40px;
+        color: #F197CE;
+        transform: translateY(-70%);
+        
+    }
+    
+    #congratulations {
+        font-size: 80px;
+        transform: translateY(-150%);
     }
 }
+
+
 
 
 
