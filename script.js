@@ -30,18 +30,20 @@ function showSummary() {
     
     summaryElement.innerText = `You got ${correctCount} out of 5 !`;
     
-    if(correctCount === 5){
-    congratulationsElement.innerText = 'You know me so well Bestie \uD83D\uDC8B';
-    shareButton.style.display = 'block';}
-
-    else if (correctCount <= 1){
+    if (correctCount === 5) {
+        congratulationsElement.innerText = 'You know me so well Bestie \uD83D\uDC8B';
+        congratulationsElement.style.fontSize = '25px'; 
+        shareButton.style.display = 'block';
+    } else if (correctCount <= 1) {
         congratulationsElement.innerText = '🥺 its okay you can retest';
-    shareButton.style.display = 'block';
-    }
-    else {
+        congratulationsElement.style.fontSize = '25px';
+        shareButton.style.display = 'block';
+    } else {
         congratulationsElement.innerText = `Wow ${correctCount}? not bad 🥰 `;
-    shareButton.style.display = 'block';
+        congratulationsElement.style.fontSize = '25px'; 
+        shareButton.style.display = 'block';
     }
+    
 }
 
 
